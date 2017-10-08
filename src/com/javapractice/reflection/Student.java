@@ -3,7 +3,7 @@ package com.javapractice.reflection;
 public class Student extends Person {
 	private  String name;
 	private int age;
-	
+	private String location;
 	
 	public Student() {
 		super();
@@ -18,6 +18,16 @@ public class Student extends Person {
 	}
 
 
+
+	@SuppressWarnings("unused")
+	private Student(String name, int age, String location) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.location = location;
+	}
+
+
 	@Override
 	public void sayHello() {
 		// TODO Auto-generated method stub
@@ -28,8 +38,11 @@ public class Student extends Person {
 
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", age=" + age + "]";
+		return "Student [name=" + name + ", age=" + age + ", location=" + location + "]";
 	}
+
+
+	
 	
 	
 }
