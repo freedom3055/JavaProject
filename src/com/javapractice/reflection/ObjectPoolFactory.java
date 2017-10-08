@@ -1,4 +1,4 @@
-package com.javapractice.myclassloader;
+package com.javapractice.reflection;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
