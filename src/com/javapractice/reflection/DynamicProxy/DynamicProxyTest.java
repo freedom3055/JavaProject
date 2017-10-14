@@ -7,14 +7,15 @@ public class DynamicProxyTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/**
-		 * 面向切面编程，动态代理
+		 * dynamic proxy 
 		 */
 		Dog targetDog = new Dog();
 		MyInvocationHandler dogHandler = new MyInvocationHandler(targetDog);
 		Animal dog = getAnimalProxy(dogHandler);
 		dog.eat();
+	
 		/**
-		 * 硬编码代理
+		 * hardcode proxy
 		 */
 		DogProxy dogProxy = new DogProxy(targetDog);
 		dogProxy.eat();
